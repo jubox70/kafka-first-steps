@@ -19,6 +19,10 @@ To create a topic:
 
 .bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 3 --partitions 3 --topic test-topic
 
+List topics:
+
+.bin/kafka-topics.sh  --bootstrap-server localhost:9093 --list
+
 Connect to a topic to produce messages:
 
 ./kafka-console-producer.sh --topic test-topic --bootstrap-server localhost:9092
